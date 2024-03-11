@@ -97,13 +97,8 @@ h2.separator {
     line-height: 23px;
     background: #fff;
     border-radius: 18px;
-    /* box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: all 0.3 ease; */
 }
 
-/* .benefits .item:hover {
-    box-shadow: none;
-} */
 
 .benefits .item .header {
     display: flex;
@@ -352,4 +347,94 @@ h2.separator {
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 350px;
+    margin-bottom: 80px;
+}
+
+.pricing .card {
+    max-width: 370px;
+    height: 700px;
+    background-color: #fff;
+    padding: 40px;
+    margin: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3 ease;
+}
+
+.pricing .card:hover{
+    box-shadow: none;
+}
+
+.pricing .card h3 {
+    font-size: 1.6rem;
+}
+
+.pricing .card p {
+    margin: 10px 0px;
+}
+
+.pricing .card a {
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 2px solid #3282B8;
+    color: #3282B8;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.pricing .card a:hover {
+    background-color: #3282B8;
+    color: #fff;
+}
+
+.pricing .card h4 {
+    margin-top: 30px;
+}
+
+.pricing .card ul {
+    list-style: none;
+}
+
+.pricing .card ul li {
+    line-height: 2;
+}
+
+.pricing .card li img{
+    vertical-align: middle;
+    margin-left: -5px;
+    margin-right: 5px;
+}
+
+.pricing .card.popular {
+    background-color: #3282B8;
+    transform: scale(1, 1.09);
+}
+
+.pricing .card.popular {
+    color: #fff
+}
+
+.pricing .card.popular a {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.pricing .card.popular a:hover{
+    background-color: #fff;
+    color: #3282B8;
+}
+
+.pricing .card.popular ul img{
+    filter: brightness(0) invert(1);
 }
